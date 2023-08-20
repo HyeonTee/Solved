@@ -3,14 +3,14 @@ class Solution:
         n = len(nums)
         ans = [1] * n
         
-        product = 1
+        lt = 1
         for i in range(n):
-            ans[i] = product
-            product *= nums[i]
+            ans[i] = lt
+            lt *= nums[i]
         
-        product = 1
+        rt = 1
         for i in range(n-1,-1,-1):
-            ans[i] *= product
-            product *= nums[i]
+            ans[i] *= rt
+            rt *= nums[i]
         
         return ans
