@@ -1,22 +1,16 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
-        pro_all = 1
-        zero_idx = []
+        ans = [1] * n
+        
+        lt = 1
         for i in range(n):
-            if nums[i] == 0:
-                zero_idx.append(i)
-                continue
-            pro_all *= nums[i]
+            ans[i] = lt
+            lt *= nums[i]
         
-        ans = [0] * n
+        rt = 1
+        for i in range(n-1,-1,-1):
+            ans[i] *= rt
+            rt *= nums[i]
         
-        if len(zero_idx) > 1:
-            return ans
-        elif len(zero_idx) == 1:
-            ans[zero_idx[0]] = pro_all
-            return ans
-        else:
-            for i in range(n):
-                ans[i] = pro_all // nums[i]
-            return ans
+        return ans
