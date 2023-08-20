@@ -5,7 +5,7 @@ class Solution:
         
         lt = 1
         for i in range(n):
-            ans[i] = lt
+            ans[i] *= lt
             lt *= nums[i]
         
         rt = 1
