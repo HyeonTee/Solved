@@ -9,4 +9,5 @@ class Solution:
                 idx -= 1
             idx += 1
             
-        nums += [0] * cnt
+        for _ in range(cnt):
+            nums.append(0)
