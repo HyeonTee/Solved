@@ -4,7 +4,7 @@ class Solution:
         cnt = 0
         for num in nums:
             if ((k-num) in memo) and memo[k-num] > 0:
-                memo[k-num] -= 1
+                memo[k-num] = memo[k-num] - 1
                 cnt += 1
                 
             else:
