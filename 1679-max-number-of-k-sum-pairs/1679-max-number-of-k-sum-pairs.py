@@ -3,8 +3,9 @@ class Solution:
         memo = {}
         cnt = 0
         for num in nums:
-            if ((k-num) in memo) and memo[k-num] > 0:
-                memo[k-num] = memo[k-num] - 1
+            target = k - num
+            if target in memo and memo[target] > 0:
+                memo[k-num] -= 1
                 cnt += 1
                 
             else:
