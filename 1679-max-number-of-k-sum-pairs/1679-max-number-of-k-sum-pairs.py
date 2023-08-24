@@ -10,4 +10,5 @@ class Solution:
                 
             else:
                 memo[num] = memo.get(num, 0) + 1
+        
         return cnt
