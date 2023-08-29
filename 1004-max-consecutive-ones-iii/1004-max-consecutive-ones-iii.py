@@ -2,6 +2,7 @@ class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
         n = len(nums)
         lt = 0
+        max_len = 0
         
         for rt in range(n):
             if nums[rt] == 0:
