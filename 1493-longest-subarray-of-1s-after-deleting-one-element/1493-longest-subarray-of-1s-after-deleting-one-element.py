@@ -3,7 +3,6 @@ class Solution:
         n = len(nums)
         k = 1
         lt = 0
-        max_len = 0
         
         for rt in range(n):
             if nums[rt] == 0:
