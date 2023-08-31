@@ -1,8 +1,12 @@
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
-        occ_list = []
+        memo = {}
+        for a in arr:
+            if a not in memo:
+                memo[a] = 1
+            else:
+                memo[a] += 1
         
-        for i in set(arr):
-            occ_list.append(arr.count(i))
-            
-        return len(set(occ_list)) == len(set(arr))
+        occurs = list(memo.values())
+        
+        return len(occurs) == len(set(occurs))
