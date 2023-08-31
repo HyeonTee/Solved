@@ -3,12 +3,10 @@ class Solution:
         memo = {}
         for a in arr:
             if a not in memo:
-                memo[a] = 0
+                memo[a] = 1
             else:
                 memo[a] += 1
-                
-        occur = list(memo.values())
-        if len(occur) == len(set(occur)):
-            return True
-        else:
-            return False
+        
+        occurs = list(memo.values())
+        
+        return len(occurs) == len(set(occurs))
