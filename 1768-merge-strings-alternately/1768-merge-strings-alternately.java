@@ -1,23 +1,10 @@
 class Solution {
-    public String mergeAlternately(String word1, String word2) {
-        int n1 = word1.length();
-        int n2 = word2.length();
-        
-        String newString = "";
-        if (n1 > n2) {
-            for (int i =0; i < n2; i++) {
-                newString += word1.charAt(i);
-                newString += word2.charAt(i);
-            }
-            newString += word1.substring(n2, n1);
-        } else {
-            for (int i =0; i < n1; i++) {
-                newString += word1.charAt(i);
-                newString += word2.charAt(i);
-            }
-            newString += word2.substring(n1, n2);
+   public static String mergeAlternately(String word1, String word2) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < word1.length() + word2.length(); i++) {
+            if(i < word1.length()) sb.append(word1.charAt(i));
+            if(i < word2.length()) sb.append(word2.charAt(i));
         }
-        
-        return newString;
+        return sb.toString();
     }
 }
