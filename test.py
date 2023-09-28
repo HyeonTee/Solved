@@ -1,12 +1,30 @@
-S = input()
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10**8)
 
-b_cnt = 0
-del_cnt = 0
+n = int(input())
 
-for c in S:
-    if c == "A":
-        del_cnt = min(b_cnt, del_cnt + 1)
-    else:
-        b_cnt += 1
+parent = {}
+edges = {}
+visited = {}
 
-print(del_cnt)
+for i in range(1,n+1):
+    edges[i] = []
+    visited[i] = False
+
+for _ in range(n-1):
+    v, w = map(int, input().split())
+    edges[v].append(w)
+    edges[w].append(v)
+
+def dfs(v):
+    visited[v] = True
+    for w in edges[v]:
+        if not visited[w]:
+            parent[w] = v
+            dfs(w)
+
+dfs(1)
+
+for i in range(2, n+1):
+    print(parent[i])
