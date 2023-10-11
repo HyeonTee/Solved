@@ -1,10 +1,19 @@
 import sys
+input = sys.stdin.readline
+
+def count_one(n):
+    count = 0
+    while n:
+        n &= n - 1
+        count += 1
+    return count
 
 n, k = map(int, input().split())
 
-count = 0
-while bin(n).count('1') > k:
-    n = n + 1
-    count = count + 1
 
-print(count)
+cnt = 0
+while count_one(n) > k:
+	n += 1
+	cnt += 1
+
+print(cnt)
