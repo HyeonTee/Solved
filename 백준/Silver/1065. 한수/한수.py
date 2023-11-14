@@ -1,21 +1,23 @@
-N = int(input())
+import sys
+input = sys.stdin.readline
 
-if N < 10:
-    print(N)
+def is_valid(num):
+	num_str = str(num)
+	n = len(num_str)
+	d = int(num_str[1]) - int(num_str[0])
+	for i in range(n-1):
+		dt = int(num_str[i+1]) - int(num_str[i])
+		if d != dt:
+			return False
+	return True
 
+n = int(input())
+
+if n < 100:
+	print(n)
 else:
-    cnt = 9
-    for i in range(10,N+1):
-        i_str = str(i)
-        d = int(i_str[1]) - int(i_str[0])
-        
-        ok = 1
-
-        for t in range(len(i_str)-1):
-            dt = int(i_str[t+1]) - int(i_str[t])
-            if d != dt:
-                ok = 0
-
-        cnt += ok
-
-    print(cnt)
+	cnt = 99
+	for i in range(100, n+1):
+		if is_valid(i):
+			cnt += 1
+	print(cnt)
