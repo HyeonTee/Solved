@@ -46,7 +46,7 @@ public class Main {
             }
         }
 
-        bw.write(lt + "\n");
+        bw.write(lt + "");
 
         br.close();
         bw.flush();
