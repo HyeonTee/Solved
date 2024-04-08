@@ -10,7 +10,7 @@ public class Main {
         Arrays.fill(time, 9999999);
         Queue<Integer> queue = new LinkedList<Integer>();
         queue.add(n);
-        time[n] = 1;
+        time[n] = 0;
 
         while (!queue.isEmpty()) {
             int curr = queue.poll();
@@ -30,7 +30,7 @@ public class Main {
                 }
             }
         }
-        System.out.println(time[k] - 1);
+        System.out.println(time[k]);
     }
 
     static boolean inRange(int x) {
