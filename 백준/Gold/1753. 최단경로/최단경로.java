@@ -19,6 +19,7 @@ public class Main {
             int weight = Integer.parseInt(st.nextToken());
 
             edges.putIfAbsent(a, new HashMap<>());
+            // 출발, 도착이 같은 간선이 있는 경우를 고려해야 함!!!!!!!!!!!!!
             if (edges.get(a).containsKey(b)) {
                 if (edges.get(a).get(b) > weight) {
                     edges.get(a).put(b, weight);
@@ -41,7 +42,7 @@ public class Main {
             int vertex = current[0];
             int distance = current[1];
 
-//            if (visited[vertex]) continue;
+            if (visited[vertex]) continue;
 
             if (edges.containsKey(vertex)) {
                 for (Map.Entry<Integer, Integer> entry : edges.get(vertex).entrySet()) {
@@ -55,7 +56,7 @@ public class Main {
                 }
             }
 
-//            visited[vertex] = true;
+            visited[vertex] = true;
         }
 
         for (int i = 0; i < v; i++) {
