@@ -1,10 +1,25 @@
+import java.util.*;
+
 class Solution {
-   public static String mergeAlternately(String word1, String word2) {
+    public String mergeAlternately(String word1, String word2) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < word1.length() + word2.length(); i++) {
-            if(i < word1.length()) sb.append(word1.charAt(i));
-            if(i < word2.length()) sb.append(word2.charAt(i));
+        int len1 = word1.length();
+        int len2 = word2.length();
+        
+        if (len1 > len2) {
+            for (int i = 0; i < len2; i++) {
+                sb.append(word1.charAt(i));
+                sb.append(word2.charAt(i));
+            }
+            sb.append(word1.substring(len2));
+        } else {
+            for (int i = 0; i < len1; i++) {
+                sb.append(word1.charAt(i));
+                sb.append(word2.charAt(i));
+            }
+            sb.append(word2.substring(len1));
         }
-        return sb.toString();
+
+        return sb.toString();        
     }
 }
