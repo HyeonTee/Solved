@@ -6,9 +6,8 @@ class Solution {
         
         int len1 = str1.length();
         int len2 = str2.length();
-        int len_gcd = gcd(len1, len2);
         
-        return str1.substring(0, len_gcd);
+        return str1.substring(0, gcd(len1, len2));
         
     }
     
