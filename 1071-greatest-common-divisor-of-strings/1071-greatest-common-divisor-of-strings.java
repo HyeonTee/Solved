@@ -4,10 +4,7 @@ class Solution {
             return "";
         }
         
-        int len1 = str1.length();
-        int len2 = str2.length();
-        
-        return str1.substring(0, gcd(len1, len2));
+        return str1.substring(0, gcd(str1.length(), str2.length()));
         
     }
     
