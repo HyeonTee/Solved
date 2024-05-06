@@ -19,14 +19,13 @@ class Solution {
             pointer=pointer.next.next;
         }
         
-        ListNode curr = mid; // 1 2 3 4
         ListNode prev = null;
         ListNode next;
-        while (curr != null) {
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+        while (mid != null) {
+            next = mid.next;
+            mid.next = prev;
+            prev = mid;
+            mid = next;
         }
         
         while (prev != null) {
