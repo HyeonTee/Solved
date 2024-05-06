@@ -29,11 +29,10 @@ class Solution {
             curr = next;
         }
         
-        ListNode right = prev;
-        while (right != null) {
-            max = Math.max(max, head.val + right.val);
+        while (prev != null) {
+            max = Math.max(max, head.val + prev.val);
             head = head.next;
-            right = right.next;
+            prev = prev.next;
         }
         
         return max;
