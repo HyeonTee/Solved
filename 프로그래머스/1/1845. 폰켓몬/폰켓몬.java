@@ -4,7 +4,6 @@ class Solution {
     public int solution(int[] nums) {
         int n = nums.length;
         
-        // Convert the int[] array to a Set<Integer>
         Set<Integer> uniqueNums = new HashSet<>();
         for (int num : nums) {
             uniqueNums.add(num);
