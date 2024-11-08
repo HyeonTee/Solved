@@ -1,7 +1,6 @@
+from collections import Counter
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        memo = {}
-        for num in nums:
-            memo[num] = memo.get(num, 0) + 1
-                
-        return max(memo, key=memo.get)
+        count = Counter(nums)
+        return max(count, key=count.get)
