@@ -1,30 +1,32 @@
 #include <stdio.h>
+#include <fcntl.h>
+#include <sys/mman.h>
 #include <unistd.h>
 
-#define BUF_SIZE 1 << 20  // 1MB 버퍼
-
-char buf[BUF_SIZE];
-int N, count = 0;
-long long sum = 0;
+#define BUF_SIZE 1 << 26
 
 int main() {
-    // 표준 입력을 fread로 한 번에 읽기
-    int bytesRead = read(STDIN_FILENO, buf, BUF_SIZE);
-    char *ptr = buf;
+    int fd = STDIN_FILENO;
+    char *ptr = mmap(NULL, BUF_SIZE, PROT_READ, MAP_PRIVATE, fd, 0);
+    
+    char *end = ptr;
+    while (*end) end++;
 
-    // 첫 번째 줄: N 읽기
+    int N = 0;
     while (*ptr >= '0' && *ptr <= '9') {
         N = N * 10 + (*ptr - '0');
         ptr++;
     }
-    ptr++;  // 개행 문자 넘기기
+    ptr++;
 
-    // 두 번째 줄부터 자연수 읽기
+    int count = 0;
+    long long sum = 0;
     int num = 0;
-    while (ptr < buf + bytesRead) {
+
+    while (ptr < end) {
         if (*ptr >= '0' && *ptr <= '9') {
             num = num * 10 + (*ptr - '0');
-        } else {  // 개행 문자 '\n'이면 숫자 확정
+        } else {
             sum += num;
             count++;
             num = 0;
@@ -32,8 +34,9 @@ int main() {
         ptr++;
     }
 
-    // M과 합 출력
-    printf("%d\n%lld\n", count, sum);
+    char out_buf[32];
+    int len = sprintf(out_buf, "%d\n%lld\n", count, sum);
+    write(STDOUT_FILENO, out_buf, len);
 
     return 0;
 }
