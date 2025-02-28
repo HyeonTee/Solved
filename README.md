@@ -9,6 +9,7 @@
 ## Array
 |  |
 | ------- |
+| [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
 ## Hash Table
 |  |
@@ -26,4 +27,12 @@
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
+## Sorting
+|  |
+| ------- |
+| [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
+## Counting Sort
+|  |
+| ------- |
+| [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 <!---LeetCode Topics End-->
