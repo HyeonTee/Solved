@@ -14,6 +14,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0290-word-pattern](https://github.com/HyeonTee/Solved/tree/master/0290-word-pattern) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
 ## Math
 |  |
@@ -35,4 +36,8 @@
 |  |
 | ------- |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
+## String
+|  |
+| ------- |
+| [0290-word-pattern](https://github.com/HyeonTee/Solved/tree/master/0290-word-pattern) |
 <!---LeetCode Topics End-->
