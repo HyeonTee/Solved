@@ -9,6 +9,7 @@
 ## Array
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0088-merge-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/HyeonTee/Solved/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
@@ -33,6 +34,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0088-merge-sorted-array) |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 ## Counting Sort
 |  |
@@ -45,6 +47,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0088-merge-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/HyeonTee/Solved/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Binary Search
 |  |
