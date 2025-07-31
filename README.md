@@ -9,6 +9,7 @@
 ## Array
 |  |
 | ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/HyeonTee/Solved/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
 ## Hash Table
@@ -40,4 +41,12 @@
 |  |
 | ------- |
 | [0290-word-pattern](https://github.com/HyeonTee/Solved/tree/master/0290-word-pattern) |
+## Two Pointers
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/HyeonTee/Solved/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Binary Search
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/HyeonTee/Solved/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 <!---LeetCode Topics End-->
