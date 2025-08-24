@@ -3,23 +3,24 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
+        char[] s = br.readLine().toCharArray();
+
         int stack = 0;
         int answer = 0;
+        char prev = 0;
 
-        for (int i = 0; i < str.length(); i++){
-            if (str.charAt(i) == '(') {
-                if (str.charAt(i + 1) == ')') {
+        for (char c : s) {
+            if (c == '(') {
+                stack++;
+            } else {
+                stack--;
+                if (prev == '(') {
                     answer += stack;
                 } else {
-                    stack++;
-                }
-            } else {
-                if (str.charAt(i - 1) != '(') {
-                    answer++;
-                    stack--;
+                    answer += 1;
                 }
             }
+            prev = c;
         }
 
         System.out.println(answer);
