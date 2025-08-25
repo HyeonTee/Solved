@@ -55,6 +55,10 @@ public class Main {
             stack.push(i);
         }
 
+        while (!stack.isEmpty()) {
+            result[stack.pop()] = -1;
+        }
+
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
             sb.append(result[i]).append(" ");
