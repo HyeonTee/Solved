@@ -46,14 +46,13 @@ public class Main {
         Stack stack = new Stack(n);
         for (int i = 0; i < n; i++) {
             int num = nums[i];
-            if (stack.isEmpty() || num <= nums[stack.peek()]) {
-                stack.push(i);
-            } else {
+            if (!stack.isEmpty() && num > nums[stack.peek()]) {
                 while (!stack.isEmpty() && num > nums[stack.peek()]) {
                     result[stack.pop()] = num;
                 }
-                stack.push(i);
             }
+
+            stack.push(i);
         }
 
         StringBuilder sb = new StringBuilder();
