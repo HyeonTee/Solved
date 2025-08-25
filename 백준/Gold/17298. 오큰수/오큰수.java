@@ -1,69 +1,54 @@
 import java.io.*;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-
-class Stack {
-    int[] data;
-    int top = 0;
-
-    Stack(int n) {
-        data = new int[n+1];
-    }
-
-    void push(int x) {
-        data[++top] = x;
-    }
-
-    int pop() {
-        if (top == 0) {
-            return -1;
-        }
-        return data[top--];
-    }
-
-    int peek() {
-        return data[top];
-    }
-
-    boolean isEmpty() {
-        return top == 0;
-    }
-}
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int[] nums = new int[n];
-        for (int i = 0; i < n; i++) {
-            nums[i] = Integer.parseInt(st.nextToken());
+    static final class FastScanner {
+        private final InputStream in;
+        private final byte[] buffer = new byte[1 << 16];
+        private int ptr = 0, len = 0;
+        FastScanner(InputStream is) { this.in = is; }
+        private int read() throws IOException {
+            if (ptr >= len) {
+                len = in.read(buffer);
+                ptr = 0;
+                if (len <= 0) return -1;
+            }
+            return buffer[ptr++];
         }
+        int nextInt() throws IOException {
+            int c, sgn = 1, x = 0;
+            do c = read(); while (c <= ' ');
+            if (c == '-') { sgn = -1; c = read(); }
+            while (c > ' ') { x = x * 10 + (c - '0'); c = read(); }
+            return x * sgn;
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        FastScanner fs = new FastScanner(System.in);
+        int n = fs.nextInt();
+        int[] nums = new int[n];
+        for (int i = 0; i < n; i++) nums[i] = fs.nextInt();
 
         int[] result = new int[n];
         Arrays.fill(result, -1);
 
-        Stack stack = new Stack(n);
+        int[] stack = new int[n];
+        int top = -1;
+
         for (int i = 0; i < n; i++) {
             int num = nums[i];
-            if (!stack.isEmpty() && num > nums[stack.peek()]) {
-                while (!stack.isEmpty() && num > nums[stack.peek()]) {
-                    result[stack.pop()] = num;
-                }
+            while (top >= 0 && num > nums[stack[top]]) {
+                result[stack[top--]] = num;
             }
-
-            stack.push(i);
+            stack[++top] = i;
         }
 
-        while (!stack.isEmpty()) {
-            result[stack.pop()] = -1;
-        }
-
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(n * 3);
         for (int i = 0; i < n; i++) {
-            sb.append(result[i]).append(" ");
+            sb.append(result[i]);
+            if (i + 1 < n) sb.append(' ');
         }
-
-        System.out.println(sb);
+        System.out.print(sb);
     }
 }
