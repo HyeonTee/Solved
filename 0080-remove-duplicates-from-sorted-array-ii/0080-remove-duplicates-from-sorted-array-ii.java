@@ -1,25 +1,13 @@
 class Solution {
     public int removeDuplicates(int[] nums) {
-        int k = 1;
-        boolean isTwice = true;
-        if (nums.length == 1) {
-            return 1;
-        }
+        if (nums.length <= 2) return nums.length;
 
-        int curr = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            if (curr == nums[i]) {
-                if (isTwice) {
-                    nums[k++] = nums[i];
-                    isTwice = false;
-                }
-            } else {
+        int k = 2;
+        for (int i = 2; i < nums.length; i++) {
+            if (nums[i] != nums[k - 2]) {
                 nums[k++] = nums[i];
-                curr = nums[i];
-                isTwice = true;
             }
         }
-
         return k;
     }
 }
