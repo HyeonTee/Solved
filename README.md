@@ -15,11 +15,13 @@
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/HyeonTee/Solved/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0088-merge-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/HyeonTee/Solved/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/HyeonTee/Solved/tree/master/0169-majority-element) |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
 ## Hash Table
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/HyeonTee/Solved/tree/master/0169-majority-element) |
 | [0242-valid-anagram](https://github.com/HyeonTee/Solved/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/HyeonTee/Solved/tree/master/0290-word-pattern) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
@@ -40,11 +42,13 @@
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0088-merge-sorted-array) |
+| [0169-majority-element](https://github.com/HyeonTee/Solved/tree/master/0169-majority-element) |
 | [0242-valid-anagram](https://github.com/HyeonTee/Solved/tree/master/0242-valid-anagram) |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 ## Counting Sort
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/HyeonTee/Solved/tree/master/0169-majority-element) |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
 ## String
 |  |
@@ -68,4 +72,8 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/HyeonTee/Solved/tree/master/0011-container-with-most-water) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/HyeonTee/Solved/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
