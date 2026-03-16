@@ -15,7 +15,7 @@ class Solution {
 
         for (int i = ratings.length - 2; i >= 0; i--) {
             if (ratings[i] > ratings[i + 1]) {
-                candies[i] = max(candies[i + 1] + 1, candies[i]);
+                candies[i] = Math.max(candies[i + 1] + 1, candies[i]);
             }
         }
 
@@ -24,9 +24,5 @@ class Solution {
         }
 
         return result;
-    }
-
-    int max(int a, int b) {
-        return a > b ? a : b;
     }
 }
