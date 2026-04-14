@@ -10,6 +10,7 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/HyeonTee/Solved/tree/master/0011-container-with-most-water) |
+| [0014-longest-common-prefix](https://github.com/HyeonTee/Solved/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/HyeonTee/Solved/tree/master/0027-remove-element) |
 | [0042-trapping-rain-water](https://github.com/HyeonTee/Solved/tree/master/0042-trapping-rain-water) |
@@ -56,6 +57,7 @@
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/HyeonTee/Solved/tree/master/0014-longest-common-prefix) |
 | [0058-length-of-last-word](https://github.com/HyeonTee/Solved/tree/master/0058-length-of-last-word) |
 | [0242-valid-anagram](https://github.com/HyeonTee/Solved/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/HyeonTee/Solved/tree/master/0290-word-pattern) |
@@ -95,4 +97,8 @@
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/HyeonTee/Solved/tree/master/0042-trapping-rain-water) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/HyeonTee/Solved/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
