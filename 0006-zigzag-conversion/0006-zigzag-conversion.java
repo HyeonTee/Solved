@@ -1,32 +1,28 @@
 class Solution {
     public String convert(String s, int numRows) {
-       if (numRows == 1 || numRows >= s.length()) {
+        if (numRows == 1) {
             return s;
         }
 
-        int idx = 0, d = 1;
-        List<Character>[] rows = new ArrayList[numRows];
+        StringBuilder[] stacks = new StringBuilder[numRows];
         for (int i = 0; i < numRows; i++) {
-            rows[i] = new ArrayList<>();
+            stacks[i] = new StringBuilder();
+        }
+        for (int i = 0; i < s.length(); i++) {
+            stacks[cycle(i, numRows)].append(s.charAt(i));
         }
 
-        for (char c : s.toCharArray()) {
-            rows[idx].add(c);
-            if (idx == 0) {
-                d = 1;
-            } else if (idx == numRows - 1) {
-                d = -1;
-            }
-            idx += d;
+        for (int i = 1; i < numRows; i++) {
+            stacks[0].append(stacks[i]);
         }
 
-        StringBuilder result = new StringBuilder();
-        for (List<Character> row : rows) {
-            for (char c : row) {
-                result.append(c);
-            }
-        }
+        return stacks[0].toString();
+    }
 
-        return result.toString();        
+    int cycle(int i, int n) {
+        int cycle = (n - 1) * 2;
+        int pos = i % cycle;
+
+        return pos < n ? pos : cycle - pos;
     }
 }
