@@ -4,13 +4,17 @@ class Solution {
             return nums[0] >= target ? 1 : 0;
         }
 
+        if (nums[0] >= target) {
+            return 1;
+        }
+
         int answer = nums.length + 1;
         int lt = 0;
         int rt = 1;
         int sum = nums[0] + nums[1];
         
         while (lt < rt) {
-            if (nums[rt] >= target || nums[lt] >= target) {
+            if (nums[rt] >= target) {
                 return 1;
             }
 
