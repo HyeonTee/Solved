@@ -31,6 +31,7 @@
 | [0242-valid-anagram](https://github.com/HyeonTee/Solved/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/HyeonTee/Solved/tree/master/0290-word-pattern) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HyeonTee/Solved/tree/master/0380-insert-delete-getrandom-o1) |
+| [0383-ransom-note](https://github.com/HyeonTee/Solved/tree/master/0383-ransom-note) |
 ## Math
 |  |
 | ------- |
@@ -57,6 +58,7 @@
 | ------- |
 | [0169-majority-element](https://github.com/HyeonTee/Solved/tree/master/0169-majority-element) |
 | [0274-h-index](https://github.com/HyeonTee/Solved/tree/master/0274-h-index) |
+| [0383-ransom-note](https://github.com/HyeonTee/Solved/tree/master/0383-ransom-note) |
 ## String
 |  |
 | ------- |
@@ -65,6 +67,7 @@
 | [0058-length-of-last-word](https://github.com/HyeonTee/Solved/tree/master/0058-length-of-last-word) |
 | [0242-valid-anagram](https://github.com/HyeonTee/Solved/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/HyeonTee/Solved/tree/master/0290-word-pattern) |
+| [0383-ransom-note](https://github.com/HyeonTee/Solved/tree/master/0383-ransom-note) |
 ## Two Pointers
 |  |
 | ------- |
