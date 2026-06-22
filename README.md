@@ -15,6 +15,7 @@
 | [0026-remove-duplicates-from-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/HyeonTee/Solved/tree/master/0027-remove-element) |
 | [0042-trapping-rain-water](https://github.com/HyeonTee/Solved/tree/master/0042-trapping-rain-water) |
+| [0054-spiral-matrix](https://github.com/HyeonTee/Solved/tree/master/0054-spiral-matrix) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/HyeonTee/Solved/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/HyeonTee/Solved/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HyeonTee/Solved/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -121,4 +122,12 @@
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/HyeonTee/Solved/tree/master/0209-minimum-size-subarray-sum) |
+## Matrix
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/HyeonTee/Solved/tree/master/0054-spiral-matrix) |
+## Simulation
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/HyeonTee/Solved/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->
